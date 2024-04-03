@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        section {
+            display: flex;
+            background-image: url("main2.jpg");
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 100vh;
+        }
+ 
+        section .layout {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            padding: 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+        }
+ 
+        section .layout::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+ 
+        section .layout h1 {
+            position: relative;
+            text-align: center;
+            color: #94860e;
+
+
+        }
+ 
+        section .layout p {
+            position: relative;
+            color: #fff;
+        }
+ 
+        section .layout button {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo"></div> <!-- You can add your logo here -->
+                ZEST
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="main.html">Home</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="register.html">Register</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="layout">
+            <h1>FACE RECOGNISER</h1>
+             
+            <p class="py-2">
+                Welcome to the portal for all the participants of our tournament! 
+                Face Recognizer allows the participants to upload an image of 
+                their face, which shall be matched with the image clicked, on 
+                the day of the tournament. Register for your sport, upload your 
+                image, and let the games begin! Let us celebrate the spirit 
+                of sportsmanship!
+            </p>
+ 
+ 
+        </div>
+    </section>
+
+
+    <script src="script.js"></script> <!-- You can add any JavaScript functionality here -->
+</body>
+</html>
+

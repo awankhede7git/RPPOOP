@@ -1,0 +1,157 @@
+/* Navbar styles */
+#navbar {
+  --navbar-height: 64px;
+  position: fixed;
+  height: var(--navbar-height);
+  background-color: #000; /* Black background for the navbar */
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #fff; /* White text color */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.home-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Add your logo styles here */
+
+/* Hamburger menu icon styles (optional) */
+#navbar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.icon-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 4px 0;
+  background-color: #fff;
+}
+
+/* Navbar links styles */
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #ccc;
+}
+
+/* Set the background image for the entire page */
+body {
+  background-image: url("register.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Copperplate Gothic", serif;
+}
+
+/* CSS code */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  background-image: url("register.jpg");
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+section .layout {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+section .layout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+section .layout h1 {
+  position: relative;
+  text-align: center;
+  color: rgb(174, 128, 44);
+}
+
+section .layout p {
+  position: relative;
+  color: #fff;
+  font-family: "Monospace", serif;
+}
+
+section .layout button {
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Copperplate Gothic", serif;
+  background-image: url('register.jpg'); /* Replace 'background.jpg' with your chosen background image */
+  background-size: cover;
+}
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+.sport-option {
+  display: inline-block;
+  margin: 20px;
+}
+
+.sport-option img {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sport-option p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}

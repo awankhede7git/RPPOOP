@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    
+        section {
+            display: flex;
+            background-image: url("main2.jpg");
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 100vh;
+        }
+    
+        section .layout {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            padding: 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+        }
+    
+        section .layout::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    
+        section .layout h1 {
+            position: relative;
+            text-align: center;
+            color: rgb(174, 128, 44);
+        }
+    
+        section .layout p {
+            position: relative;
+            color: #fff;
+        }
+    
+        section .layout button {
+            position: relative;
+        }
+    </style>
+
+</head>
+<body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo"></div> <!-- You can add your logo here -->
+                ZEST
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="main.html">Home</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="register.html">Register</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page">
+        <main class="content">
+            <h2>About Us</h2>
+            <p>College of Engineering, Pune, the third oldest centre of technical education in Asia, has always been known to be an institution that inculcates the spirit of pursuing excellence in all those that pass through its hallowed halls. So too has it been in the case of our Sports Festival, ZEST. ZEST is already ranked within the top sports festivals in India, but that is not enough for us. With lofty ambitions such as this, the pressure to deliver has only grown. A coliseum without equal for all things sports, ZEST has always been, and will always continue to be, the ultimate destination for collegiate athletes!</p>
+
+        <p>Bringing together the best of athletes with the most intense and challenging competition, ZEST is one of the biggest sports festivals in India, organised by the College of Engineering, Pune. It is one of the most awaited events organised at COEP, with over 150 colleges participating enthusiastically and the footfall on a tremendous rise. ZEST provides arenas for 21 different sports like Volleyball, Cricket, Hockey, Football, Kho-Kho, Kabaddi, Baseball, etc. Wholesome competition for some indoor games like Chess & Carrom are also organised. 15 years down the line, ZEST is bigger than ever before, and the future seems to indicate only one thing: even the sky isn't a limit!</p>
+        </main>
+    </div>
+    
+</body>
+</html>

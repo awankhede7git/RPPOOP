@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="registerstyle.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    
+        section {
+            display: flex;
+            background-image: url("main2.jpg");
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 100vh;
+        }
+    
+        section .layout {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            padding: 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+        }
+    
+        section .layout::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    
+        section .layout h1 {
+            position: relative;
+            text-align: center;
+            color: rgb(174, 128, 44);
+        }
+    
+        section .layout p {
+            position: relative;
+            color: #fff;
+        }
+    
+        section .layout button {
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo"></div> <!-- You can add your logo here -->
+                ZEST 
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="main.html">Home</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="register.html">Register</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="register-options">
+            <h2>Register for your Sport!</h2>
+            <div class="sport-option">
+                <a href="main_registration.html">
+                    <img src="basketball.jpg" alt="Basketball">
+                    <p>BASKETBALL</p>
+                </a>
+            </div>
+            <div class="sport-option">
+                <a href="main_registration.html">
+                    <img src="football.jpg" alt="Football">
+                    <p>FOOTBALL</p>
+                </a>
+            </div>
+            <div class="sport-option">
+                <a href="main_registration.html">
+                    <img src="badminton.jpg" alt="Badminton">
+                    <p>BADMINTON</p>
+                </a>
+            </div>
+            <div class="sport-option">
+                <a href="main_registration.html">
+                    <img src="volleyball.jpg" alt="Volleyball">
+                    <p>VOLLEYBALL</p>
+                </a>
+            </div>
+            <div class="sport-option">
+                <a href="main_registration.html">
+                    <img src="cricket.jpg" alt="Cricket">
+                    <p>CRICKET</p>
+                </a>
+            </div>
+            <div class="sport-option">
+                <a href="main_registration.html">
+                    <img src="hockey2.jpg" alt="Hockey">
+                    <p>HOCKEY</p>
+                </a>
+            </div>
+            <div class="sport-option">
+                <a href="main_registration.html">
+                    <img src="tabletennis.jpg" alt="Table Tennis">
+                    <p>TABLE TENNIS</p>
+                </a>
+            </div>
+            <div class="sport-option">
+                <a href="main_registration.html">
+                    <img src="chess.jpg" alt="Chess">
+                    <p>CHESS</p>
+                </a>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+</body>
+</html>
